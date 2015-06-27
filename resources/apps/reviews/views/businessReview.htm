@@ -1,0 +1,42 @@
+<div class ="well company">
+    <h1 id ="business_name">{%business_name%}</h2>
+	<div class="container-fluid">
+		<div>
+			<span style ="width: 25%;float: left;">
+				<div id ="business_rating"  class ="rating">
+					<!-- Dynamically populated by RatingSystem JavaScript 'class' -->
+				</div>
+				<div>
+					<i class="fa fa-home fa-lg"></i>
+					<address id ="business_address">
+						{%business_address%}
+					</address>
+				</div>
+				<div>
+					<i class="fa fa-phone fa-lg"></i>
+					<span id ="business_phone">{%business_phone%}</span>
+				</div>
+				<div>
+					<a id ="external_url" href ="{%external_url%}" target ="_blank">
+						<i class="fa fa-globe fa-lg"></i> External Link
+					</a>
+				</div>
+				<div>
+					<a id ="external_page_url" href ="{%external_page_url%}" target ="_blank">
+						<i class="fa fa-info-circle fa-lg"></i> External Page
+					</a>
+				</div>
+			</span>
+			<span style ="float:right;">
+				<iframe width="800" height="320" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAyrAfVA7cvDZtquEHFIhaxEO3nnc9h3mk&q={%business_address%}" allowfullscreen></iframe>
+			</span>
+		</div>
+	</div>
+</div>
+<div id ="reviews">
+	{%customer_reviews%}
+</div>
+<script type ="text/javascript">
+	//Do the thing
+	var BusinessRating = new RatingSystem({%business_rating%});
+</script>

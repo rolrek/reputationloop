@@ -1,0 +1,31 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.rating{
+	font-size:10px;
+	margin-bottom:4px;
+	color:rgb(255,165,0);
+}
+
+.reviewer_data{
+	font-size:16px;
+}
+.company{
+	background:rgb(255,255,255);
+}
+
+#external_url,#external_page_url{
+	cursor:pointer;
+}
+
+.review_time{
+	margin-top:4px;
+}
+.bold{
+	font-weight:bold;
+}
